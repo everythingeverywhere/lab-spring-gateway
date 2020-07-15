@@ -1,12 +1,18 @@
 modules:
     workshop-overview:
-        name: Workshop Overview
-        exit_sign: Setup Environment
+        name: Introduction 
+        exit_sign: Build with Gradle
     setup-environment:
-        name: Setup Environment
-        exit_sign: Start Workshop
+        name: Build with Gradle
+        exit_sign: Creating a Simple Route
     exercises/01-sample-content:
-        name: Sample Content
+        name: Creating a Simple Route
+    exercises/02-Build-with-Gradle:
+        name: Build with Gradle  
+    exercise/03-Using-Hystrix:
+        name: Using Hystrix  
+    exercises/04-Writting-Tests:
+        name: Writing Tests
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

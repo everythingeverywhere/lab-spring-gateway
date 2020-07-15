@@ -1,1 +1,4 @@
-This is the last page of the workshop. Include in this page a summary of the workshop and any links to resources relevant to the workshop. This ensures anyone doing the workshop has material they can research later to learn more.
+Summary
+Congratulations! You’ve just built your first Spring Coud Gateway application!
+
+Want to write a new guide or contribute to an existing one? Check out our contribution guidelines.

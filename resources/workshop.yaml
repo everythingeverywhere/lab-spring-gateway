@@ -1,19 +1,19 @@
 apiVersion: training.eduk8s.io/v1alpha2
 kind: Workshop
 metadata:
-  name: lab-markdown-sample
+  name: lab-spring-gateway
 spec:
-  title: Markdown Sample
-  description: A sample workshop using Markdown
+  title: Building a Gateway with Spring
+  description: Getting started with Spring Cloud Gateway
   vendor: eduk8s.io
   difficulty: beginner
   duration: 15m
-  url: https://github.com/eduk8s/lab-markdown-sample
+  url: github.com/everythingeverywhere/lab-spring-gateway
   content:
-    #image: quay.io/eduk8s/lab-markdown-sample:master
-    files: github.com/eduk8s/lab-markdown-sample
+    image: quay.io/eduk8s/lab-markdown-sample:master
+    files: github.com/everythingeverywhere/lab-spring-gateway
   session:
-    budget: small
+    budget: medium
     applications:
       console:
         enabled: true
