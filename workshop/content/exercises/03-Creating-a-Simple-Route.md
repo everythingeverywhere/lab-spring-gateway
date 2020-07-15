@@ -1,4 +1,3 @@
-### Creating A Simple Route
 The Spring Cloud Gateway uses routes in order to process requests to downstream services. In this guide we will route all of our requests to HTTPBin. Routes can be configured a number of ways but for this guide we will use the Java API provided by the Gateway.
 
 To get started, create a new `Bean` of type `RouteLocator` in `Application.java`.
