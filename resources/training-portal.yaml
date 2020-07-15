@@ -3,8 +3,9 @@ kind: TrainingPortal
 metadata:
   name: lab-spring-gateway
 spec:
-  workshops:
-  - name: lab-spring-gateway
-    capacity: 1
-    expires: 60m
+  portal:
+    capacity: 3
+    expires: 15m
     orphaned: 5m
+  workshops:
+  - name:  lab-spring-gateway
