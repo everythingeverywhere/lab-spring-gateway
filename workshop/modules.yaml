@@ -9,7 +9,7 @@ modules:
         name: Creating a Simple Route
     exercises/02-Build-with-Gradle:
         name: Build with Gradle  
-    exercise/03-Using-Hystrix:
+    exercises/03-Using-Hystrix:
         name: Using Hystrix  
     exercises/04-Writting-Tests:
         name: Writing Tests

@@ -1,9 +1,12 @@
-### Build with Gradle
-
 First you set up a basic build script. You can use any build system you like when building apps with Spring, but the code you need to work with Gradle and Maven is included here. If you’re not familiar with either, refer to Building Java Projects with Gradle or Building Java Projects with Maven.
 
 #### Create the directory structure
-In a project directory of your choosing, create the following subdirectory structure; for example, with `mkdir -p src/main/java/hello` on *nix systems:
+
+In a project directory of your choosing, create the following subdirectory structure with `
+```execute
+mkdir -p src/main/java/hello
+```
+
 ---
 └── src
     └── main
@@ -14,7 +17,11 @@ In a project directory of your choosing, create the following subdirectory struc
 
 Below is the initial Gradle build file.
 
-`build.gradle`
+```execute
+build.gradle
+```
+
+You can copy the following and paste it into the file using the embedded IDE.
 
 ```copy
 buildscript {
