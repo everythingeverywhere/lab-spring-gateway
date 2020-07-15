@@ -2,13 +2,13 @@ modules:
     exercises/01-intro:
         name: Introduction 
         exit_sign: Build with Gradle
-    exercises/02-build-with-gradle:
+    exercises/02-build-gradle:
         name: Build with Gradle
-    exercises/03-creating-a-simple-route:
+    exercises/03-simple-route:
         name: Creating a Simple Route  
-    exercises/04-using-hystrix:
+    exercises/04-hystrix:
         name: Using Hystrix  
-    exercises/05-writing-tests:
+    exercises/05-write-tests:
         name: Writing Tests
     workshop-summary:
         name: Workshop Summary
