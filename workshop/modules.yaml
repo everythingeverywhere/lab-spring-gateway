@@ -4,11 +4,6 @@ modules:
         exit_sign: Build with Gradle
     exercises/02-Build-with-Gradle:
         name: Build with Gradle
-        exit_sign: Creating a Simple Route
-    exercises/01-sample-content:
-        name: Creating a Simple Route
-    exercises/02-Build-with-Gradle:
-        name: Build with Gradle
     exercise/03-Creating-a-Simple-Route:
         name: Creating a Simple Route  
     exercises/04-Using-Hystrix:
