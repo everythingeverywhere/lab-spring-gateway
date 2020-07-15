@@ -1,17 +1,19 @@
 modules:
-    workshop-overview:
+    exercises/01-intro:
         name: Introduction 
         exit_sign: Build with Gradle
-    setup-environment:
+    exercises/02-Build-with-Gradle:
         name: Build with Gradle
         exit_sign: Creating a Simple Route
     exercises/01-sample-content:
         name: Creating a Simple Route
     exercises/02-Build-with-Gradle:
-        name: Build with Gradle  
-    exercises/03-Using-Hystrix:
+        name: Build with Gradle
+    exercise/03-Creating-a-Simple-Route:
+        name: Creating a Simple Route  
+    exercises/04-Using-Hystrix:
         name: Using Hystrix  
-    exercises/04-Writing-Tests:
+    exercises/05-Writing-Tests:
         name: Writing Tests
     workshop-summary:
         name: Workshop Summary

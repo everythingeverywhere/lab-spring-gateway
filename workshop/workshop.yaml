@@ -4,6 +4,7 @@ modules:
     activate:
     - exercises/01-intro
     - exercises/02-Build-with-Gradle
-    - exercise/03-Using-Hystrix
-    - exercises/04-Writting-Tests
+    - exercise/03-Creating-a-Simple-Route
+    - exercise/04-Using-Hystrix
+    - exercises/05-Writing-Tests
     - workshop-summary
