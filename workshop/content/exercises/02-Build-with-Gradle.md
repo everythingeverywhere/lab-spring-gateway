@@ -18,7 +18,7 @@ mkdir -p src/main/java/hello
 Below is the initial Gradle build file.
 
 ```execute
-build.gradle
+touch build.gradle
 ```
 
 You can copy the following and paste it into the file using the embedded IDE.

@@ -11,7 +11,7 @@ modules:
         name: Build with Gradle  
     exercises/03-Using-Hystrix:
         name: Using Hystrix  
-    exercises/04-Writting-Tests:
+    exercises/04-Writing-Tests:
         name: Writing Tests
     workshop-summary:
         name: Workshop Summary
