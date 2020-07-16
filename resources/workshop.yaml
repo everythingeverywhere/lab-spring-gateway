@@ -13,9 +13,10 @@ spec:
     image: quay.io/eduk8s/jdk8-environment:master
     files: github.com/everythingeverywhere/lab-spring-gateway
   session:
-    budget: small
+    budget: medium
     applications:
-      console:
+      terminal:
         enabled: true
+        layout: split
       editor:
         enabled: true
