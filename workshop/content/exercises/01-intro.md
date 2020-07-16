@@ -8,7 +8,7 @@ git clone https://github.com/spring-guides/gs-gateway.git
 ```
 
 ```execute
-cd into gs-gateway/initial
+cd ./gs-gateway/initial/
 ```
 
 Make sure to look at the tabs above ther terminal, there you will find a code editor you can use to modify your code.
