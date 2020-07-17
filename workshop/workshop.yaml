@@ -5,8 +5,9 @@ modules:
     - exercises/01-intro
     - exercises/02-build-gradle
     - exercises/03-simple-route
-    - exercises/04-hystrix
-    - exercises/05-write-tests
+    - exercises/04-test-route
+    - exercises/05-hystrix
+    - exercises/06-write-tests
     - workshop-summary
 
 

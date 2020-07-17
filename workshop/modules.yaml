@@ -5,10 +5,12 @@ modules:
     exercises/02-build-gradle:
         name: Build with Gradle
     exercises/03-simple-route:
-        name: Creating a Simple Route  
-    exercises/04-hystrix:
+        name: Creating a Simple Route
+    exercises/04-test-route:
+        name: Test Your Simple Route   
+    exercises/05-hystrix:
         name: Using Hystrix  
-    exercises/05-write-tests:
+    exercises/06-write-tests:
         name: Writing Tests
     workshop-summary:
         name: Workshop Summary
