@@ -45,9 +45,10 @@ public RouteLocator myRoutes(RouteLocatorBuilder builder) {
 
 Now when the Hystrix wrapped route times out it will call `/fallback` in the Gateway app. Lets add the `/fallback` endpoint to our application.
 
-In `Application.java` add the annotations `@RestController` and `@RequestMapping` to the clas under the other import statements.
+In `Application.java` add the annotations `@RestController` and `@RequestMapping` to the class under the other import statements.
 
 ```copy
+import reactor.core.publisher.Mono;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 ```
@@ -64,13 +65,13 @@ public Mono<String> fallback() {
 
 To test this new fallback functionality, restart the application and again issue the following cURL command
 
-```copy
-$ curl --dump-header - --header 'Host: www.hystrix.com' http://localhost:8080/delay/3
+```execute-2
+curl --dump-header - --header 'Host: www.hystrix.com' http://localhost:8080/delay/3
 ```
 
 With the fallback in place, we now see that we get a `200` back from the Gateway with the response body of `fallback`.
 
-```copy
+```
 HTTP/1.1 200 OK
 transfer-encoding: chunked
 Content-Type: text/plain;charset=UTF-8
