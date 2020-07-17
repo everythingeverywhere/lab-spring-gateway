@@ -7,7 +7,8 @@ modules:
     - exercises/03-simple-route
     - exercises/04-test-route
     - exercises/05-hystrix
-    - exercises/06-write-tests
+    - exercises/06-test-hystrix
+    - exercise/07-write-tests
     - workshop-summary
 
 

@@ -1,9 +1,17 @@
-To test our very simple Gateway, just run `Application.java`, it should be run on port `8080`. Once the application is running, make a request to `http://localhost:8080/get`. You can do this using cURL by issuing the following command in your terminal.
+To test our very simple Gateway, just run `Application.java`, it should be run on port `8080`. 
+
+```execute-1
+mvn compile && \
+mvn package && \
+java -jar target/gs-gateway-0.1.0.jar 
+```
+
+Once the application is running, make a request to `http://localhost:8080/get`. You can do this using cURL by issuing the following command in your terminal.
 
 ```execute-2
  curl http://localhost:8080/get
 ``` 
-You should receive a response back that looks like this
+You should receive a response that looks like the following:
 
 ```
 {
