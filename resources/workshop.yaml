@@ -7,7 +7,7 @@ spec:
   description: Getting started with Spring Cloud Gateway
   vendor: eduk8s.io
   difficulty: beginner
-  duration: 15m
+  duration: 60m
   url: github.com/everythingeverywhere/lab-spring-gateway
   content:
     image: quay.io/eduk8s/jdk8-environment:master
