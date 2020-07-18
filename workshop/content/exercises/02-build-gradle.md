@@ -23,7 +23,11 @@ touch build.gradle
 
 You can copy the following and paste it into the file using the embedded IDE.
 
-```copy
+<details>
+<summary>Click to expand code</summary>
+
+<p>
+```java 
 buildscript {
     repositories {
         mavenCentral()
@@ -65,7 +69,9 @@ dependencies {
     }
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
-```
+\```
+</p>
+</details>  
 
 The Spring Boot gradle plugin provides many convenient features:
 
