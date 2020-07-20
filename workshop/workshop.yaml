@@ -3,12 +3,11 @@ name: Getting Started with Spring Cloud Gateway
 modules:
     activate:
     - exercises/01-intro
-    - exercises/02-build-gradle
-    - exercises/03-simple-route
-    - exercises/04-test-route
-    - exercises/05-hystrix
-    - exercises/06-test-hystrix
-    - exercise/07-write-tests
+    - exercises/02-simple-route
+    - exercises/03-test-route
+    - exercises/04-hystrix
+    - exercises/05-test-hystrix
+    - exercise/06-write-tests
     - workshop-summary
 
 

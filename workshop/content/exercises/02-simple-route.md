@@ -16,7 +16,7 @@ In addition to just creating routes, the `RouteLocatorBuilder` allows you to add
 
 Now, let's create a route that when a request is made to the Gateway at `/get` the request gets sent to `https://httpbin.org/get`. We will include a filter to add the request header `Hello` with the value `World` to the request before it is routed.
 
-In your `Application.java` found in`src/main/java/gateway/Application.java` import `Bean`, `RouteLocator`, and `RouteLocatorBuilder`. Place them below the other import statements.
+In in `src/main/java/gateway/Application.java` import `Bean`, `RouteLocator`, and `RouteLocatorBuilder`. Place them below the other import statements.
 
 ```copy
 import org.springframework.cloud.gateway.route.RouteLocator;

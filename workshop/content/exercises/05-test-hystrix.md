@@ -45,12 +45,24 @@ public RouteLocator myRoutes(RouteLocatorBuilder builder) {
 
 Now when the Hystrix wrapped route times out it will call `/fallback` in the Gateway app. Lets add the `/fallback` endpoint to our application.
 
-In `Application.java` add the annotations `@RestController` and `@RequestMapping` to the class under the other import statements.
+In `Application.java` import the `Mono` reactive stream,  a `@RestController` and `@RequestMapping` to the class under the other import statements.
 
 ```copy
 import reactor.core.publisher.Mono;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+```
+
+Place the annotation `@RestController` in the line above `public class Application {` such as:
+
+``` 
+@SpringBootApplication
+@RestController
+public class Application {
+```
+
+```copy
+@RestController
 ```
 
 Next add the following below the `myRoutes` function in 
