@@ -2,7 +2,6 @@ The Spring Cloud Gateway uses routes in order to process requests to downstream 
 
 To get started, we will create a new `Bean` of type `RouteLocator` in `Application.java`.
 
-
 This `Bean` will  live in `src/main/java/gateway/Application.java`. In the example bellow, `myRoutes` method takes in a `RouteLocatorBuilder` which can be used to create routes. 
 ```
 @Bean
@@ -37,3 +36,5 @@ public RouteLocator myRoutes(RouteLocatorBuilder builder) {
         .build();
 }
 ```
+
+![Step-2-example](/assets/STEP2.png)
