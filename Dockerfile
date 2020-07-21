@@ -4,4 +4,6 @@ COPY --chown=1001:0 . /home/eduk8s/
 
 RUN mv /home/eduk8s/workshop /opt/workshop
 
+RUN mv /home/eduk8s/assets /opt/assets
+
 RUN fix-permissions /home/eduk8s
