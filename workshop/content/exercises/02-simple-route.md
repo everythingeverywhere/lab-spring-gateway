@@ -37,4 +37,4 @@ public RouteLocator myRoutes(RouteLocatorBuilder builder) {
 }
 ```
 
-![Step-2-example](~/assets/STEP2.png)
+![Step-2-example](/opt/assets/STEP2.png)
