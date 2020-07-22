@@ -37,4 +37,4 @@ public RouteLocator myRoutes(RouteLocatorBuilder builder) {
 }
 ```
 
-![Step-2-example](/opt/workshop/assets/STEP2.png)
+![Step-2-example](/opt/workshop/exercises/STEP2.png)   
