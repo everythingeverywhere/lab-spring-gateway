@@ -38,4 +38,4 @@ public RouteLocator myRoutes(RouteLocatorBuilder builder) {
 ```
 
 Your file should look like bellow (click to expand)
-![Step-2-example](STEP2.png)   
+![Step-2-example](simple-route.png)   

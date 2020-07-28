@@ -1,7 +1,10 @@
 modules:
-    exercises/01-intro:
+    exercises/workshop-guide:
         name: Introduction 
-        exit_sign: Build with Gradle
+        exit_sign: Building an API Gateway
+    exercises/01-intro:
+        name: Building an API Gateway
+        exit_sign: Creating a Simple Route        
     exercises/02-simple-route:
         name: Creating a Simple Route
     exercises/03-test-route:
@@ -10,7 +13,9 @@ modules:
         name: Using Hystrix  
     exercises/05-test-hystrix:
         name: Test Hystrix Route
-    exercises/06-write-tests:
+    exercises/06-fallback:
+        name: Creating a User Friendly Response
+    exercises/07-write-tests:
         name: Writing Tests
     workshop-summary:
         name: Workshop Summary
