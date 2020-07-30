@@ -4,8 +4,8 @@ An [Eduk8s](https://docs.eduk8s.io/en/latest/project-details/project-overview.ht
 
 Workshop info:
 
-- length: 20 Mins
-- level: Easy
+- Length: 20 Mins
+- Level: Easy
 - Topic: Spring Cloud Gateway
 - Language: Java
 
