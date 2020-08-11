@@ -3,7 +3,6 @@
 An [Eduk8s](https://docs.eduk8s.io/en/latest/project-details/project-overview.html) workshop on getting started with Spring Cloud Gateway.
 
 Workshop info:
-
 - Length: 20 Mins
 - Level: Easy
 - Topic: Spring Cloud Gateway
