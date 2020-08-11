@@ -2,8 +2,7 @@ To test our very simple Gateway, just run `Application.java`, it should be run o
 
 ```execute-1
 mvn compile && \
-mvn package && \
-java -jar target/gs-gateway-0.1.0.jar 
+mvn spring-boot:run
 ```
 
 Once the application is running, make a request to `http://localhost:8080/get`. You can do this using cURL by issuing the following command in your terminal.

@@ -10,7 +10,7 @@ spec:
   duration: 20m
   url: github.com/everythingeverywhere/lab-spring-gateway
   content:
-    image: quay.io/eduk8s/jdk8-environment:master
+    image: quay.io/eduk8s/jdk11-environment:master
     files: github.com/everythingeverywhere/lab-spring-gateway
   session:
     budget: medium

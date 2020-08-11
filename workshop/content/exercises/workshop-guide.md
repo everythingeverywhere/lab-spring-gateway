@@ -15,10 +15,11 @@ To progress through the workshop you execute commands by clicking the running ma
 
 Clone the source repository for this guide using Git: 
 
-```execute
+```execute-1
 git clone https://github.com/spring-guides/gs-gateway.git
 ```
 
-```execute
+```execute-2
 cd ./gs-gateway/initial/
 ```
+
