@@ -19,7 +19,7 @@ Clone the source repository for this guide using Git:
 git clone https://github.com/spring-guides/gs-gateway.git
 ```
 
-```execute-2
+```execute-1
 cd ./gs-gateway/initial/
 ```
 

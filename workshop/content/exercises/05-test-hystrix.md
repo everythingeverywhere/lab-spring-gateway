@@ -1,5 +1,6 @@
 Lets test this new route start the application:
 ```execute-1
+kill -INT 888 && \
 mvn compile && \
 mvn package && \
 java -jar target/gs-gateway-0.1.0.jar 
