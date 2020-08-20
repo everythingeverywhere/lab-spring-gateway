@@ -1,7 +1,6 @@
 To test our very simple Gateway, just run `Application.java`, it should be run on port `8080`. 
 
 ```execute-1
-mvn compile && \
 mvn spring-boot:run
 ```
 
