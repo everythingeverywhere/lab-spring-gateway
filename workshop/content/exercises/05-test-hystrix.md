@@ -1,9 +1,6 @@
-Lets test this new route start the application:
+Lets test this new route stop (ctrl + c) and restart the application:
 ```execute-1
-kill -INT 888 && \
-mvn compile && \
-mvn package && \
-java -jar target/gs-gateway-0.1.0.jar 
+mvn spring-boot:run
 ```
 
 This time you are going to make a request to /`delay/3`. You must include a `Host` header that has the a host of `hystrix.com` or else the request won’t be routed. In cURL this would look like:

@@ -52,7 +52,13 @@ public Mono<String> fallback() {
 }
 ```
 
-To test this new fallback functionality, restart the application and again issue the following cURL command
+To test this new fallback functionality, restart the application
+dont forget to (control + C) on the terminal first
+```execute-1
+mvn spring-boot:run
+```
+
+And again issue the following cURL command
 
 ```execute-2
 curl --dump-header - --header 'Host: www.hystrix.com' http://localhost:8080/delay/3
