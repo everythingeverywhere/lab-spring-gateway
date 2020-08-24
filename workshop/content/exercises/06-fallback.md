@@ -44,16 +44,17 @@ copy the `RestController` annotation
 
 Next add the following below the `myRoutes` function in 
 `src/main/java/gateway/Application.java`
+> Note: adding \n for readability
 
 ```copy
 @RequestMapping("/fallback")
 public Mono<String> fallback() {
-  return Mono.just("fallback");
+  return Mono.just("fallback\n");
 }
 ```
 
-To test this new fallback functionality, restart the application
-dont forget to (control + C) on the terminal first
+To test this new fallback functionality, **restart the application
+dont forget to (control + C) on the terminal first**
 ```execute-1
 mvn spring-boot:run
 ```
@@ -65,8 +66,6 @@ curl --dump-header - --header 'Host: www.hystrix.com' http://localhost:8080/dela
 ```
 
 With the fallback in place, we now see that we get a `200` back from the Gateway with the response body of `fallback`. 
-
-> Note: `fallback` might print next to the tilde `~` in the terminal. 
 
 ```
 HTTP/1.1 200 OK
