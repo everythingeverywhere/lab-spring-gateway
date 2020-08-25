@@ -86,7 +86,7 @@ public class Application {
 
   @RequestMapping("/fallback")
   public Mono<String> fallback() {
-    return Mono.just("fallback");
+    return Mono.just("fallback\n");
   }
 }
 
@@ -105,7 +105,15 @@ class UriConfiguration {
 }
 ```
 
-Create a new class called `ApplicationTest` in `src/main/test/java/gateway`. In the new class add the following content.
+Create a new class called `ApplicationTest` in `src/main/test/java/gateway`. 
+
+```execute-2
+mkdir -p ./src/main/test/java/gateway && \ 
+touch ./src/main/test/java/gateway/ApplicationTest.java
+```
+
+
+In the new class add the following content.
 
 ```copy
 @RunWith(SpringRunner.class)

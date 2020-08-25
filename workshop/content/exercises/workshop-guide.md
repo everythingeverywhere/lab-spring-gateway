@@ -13,7 +13,7 @@ To progress through the workshop you execute commands by clicking the running ma
 
 #### Clone Github Repo
 
-Clone the source repository for this guide using Git: 
+Clone the source repository for this guide using Git on the 1st terminal: 
 
 ```execute-1
 git clone https://github.com/spring-guides/gs-gateway.git
@@ -23,3 +23,11 @@ git clone https://github.com/spring-guides/gs-gateway.git
 cd ./gs-gateway/initial/
 ```
 
+Clone the source repository for this guide using Git on the 2nd terminal: 
+```execute-2
+git clone https://github.com/spring-guides/gs-gateway.git
+```
+
+```execute-2
+cd ./gs-gateway/initial/
+```
