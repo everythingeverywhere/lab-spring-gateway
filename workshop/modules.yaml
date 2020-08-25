@@ -15,8 +15,6 @@ modules:
         name: Test Hystrix Route
     exercises/06-fallback:
         name: Creating a User Friendly Response
-    exercises/07-write-tests:
-        name: Writing Tests
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
