@@ -52,11 +52,15 @@ public RouteLocator myRoutes(RouteLocatorBuilder builder, UriConfiguration uriCo
 
 As you can see, instead of hardcoding the URL to HTTPBin we are getting the URL from our new configuration class instead.
 
-Below is the complete contents of `Application.java`.
+Below is the complete contents of the class `Application` below import statements.
 
 `src/main/java/gateway/Application.java`
 
 ```copy
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+
+
 @SpringBootApplication
 @EnableConfigurationProperties(UriConfiguration.class)
 @RestController
@@ -108,14 +112,23 @@ class UriConfiguration {
 Create a new class called `ApplicationTest` in `src/main/test/java/gateway`. 
 
 ```execute-2
-mkdir -p ./src/main/test/java/gateway && \ 
+mkdir -p ./src/main/test/java/gateway &&  
 touch ./src/main/test/java/gateway/ApplicationTest.java
 ```
-
+>
+> Note: **You may need to reload the editor to see these files,  use the button next to the lab timer to refresh.**
 
 In the new class add the following content.
 
 ```copy
+package gateway;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
     properties = {"httpbin=http://localhost:${wiremock.server.port}"})
@@ -160,3 +173,14 @@ Our test is actually taking advantage of WireMock from Spring Cloud Contract in 
 
 Next notice that we are taking advantage of our `UriConfiguration` class and setting the `httpbin` property in the `@SpringBootTest` annotation to the WireMock server running locally. Within the test we then setup "stubs" for the HTTPBin APIs we call via the Gateway and mock the behavior we expect. Finally we use `WebTestClient` to actually make requests to the Gateway and validate the responses.
 
+Start your Spring Gateway application:
+
+```execute-1
+mvn spring-boot:run
+```
+
+Start your test server to execute your tests:
+
+```execute-2
+mvn test
+```
