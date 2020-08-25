@@ -1,5 +1,7 @@
 To test our very simple Gateway, just run `Application.java`, it should be run on port `8080`. 
 
+> Note: If you don't have any errors in the output and you are having trouble keep executing `spring-boot:run`. This is due to lab constraints
+ 
 ```execute-1
 mvn spring-boot:run
 ```

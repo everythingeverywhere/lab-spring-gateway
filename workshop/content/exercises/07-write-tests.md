@@ -52,11 +52,21 @@ public RouteLocator myRoutes(RouteLocatorBuilder builder, UriConfiguration uriCo
 
 As you can see, instead of hardcoding the URL to HTTPBin we are getting the URL from our new configuration class instead.
 
-Below is the complete contents of the class `Application` below import statements.
+Below is the complete contents of the class `Application.java` below import statements.
 
 `src/main/java/gateway/Application.java`
 
 ```copy
+package gateway;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.gateway.route.RouteLocator;
+import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
+import org.springframework.context.annotation.Bean;
+import reactor.core.publisher.Mono;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
