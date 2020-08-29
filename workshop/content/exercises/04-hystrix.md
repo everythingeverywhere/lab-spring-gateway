@@ -7,7 +7,7 @@ In this example we will leverage HTTPBin’s delay API that waits a certain numb
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
 line: 23
-    text: |
+text: |
     .route(p -> p
         .host("*.hystrix.com")
         .filters(f -> f.hystrix(config -> config.setName("mycmd")))
