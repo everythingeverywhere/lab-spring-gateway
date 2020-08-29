@@ -22,11 +22,9 @@ In in `src/main/java/gateway/Application.java` import `Bean`, `RouteLocator`, an
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java/Application.java
 line: 5
 text: |
-
     import org.springframework.cloud.gateway.route.RouteLocator;
     import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
     import org.springframework.context.annotation.Bean;
-    
 ```
 
 Now, add your `myRoutes` method inside of the `Application` class already in the file below `public static void main`.
@@ -36,7 +34,6 @@ Now, add your `myRoutes` method inside of the `Application` class already in the
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java/
 line: 16
 text: |
-
     @Bean
     public RouteLocator myRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
@@ -46,7 +43,6 @@ text: |
                 .uri("http://httpbin.org:80"))
             .build();
     }
-
 ```
 
 Your file should look like bellow (click to expand)
