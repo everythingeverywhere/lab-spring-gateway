@@ -34,7 +34,7 @@ Now, add your `myRoutes` method inside of the `Application` class already in the
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 17
+line: 16
 text: |
         @Bean
         public RouteLocator myRoutes(RouteLocatorBuilder builder) {
