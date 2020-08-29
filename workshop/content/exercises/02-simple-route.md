@@ -25,6 +25,7 @@ text: |
     import org.springframework.cloud.gateway.route.RouteLocator;
     import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
     import org.springframework.context.annotation.Bean;
+
 ```
 
 Now, add your `myRoutes` method inside of the `Application` class already in the file below `public static void main`.
@@ -32,7 +33,7 @@ Now, add your `myRoutes` method inside of the `Application` class already in the
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 17
+line: 15
 text: |
     @Bean
     public RouteLocator myRoutes(RouteLocatorBuilder builder) {
