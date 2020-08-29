@@ -4,7 +4,7 @@ To return a response with the body `fallback` instead of `504` modify our Hystri
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 29
+line: 31
 text: |
     .setFallbackUri("forward:/fallback")))
     .uri("http://httpbin.org:80"))
@@ -29,7 +29,7 @@ Place the annotation `@RestController` in the line above `public class Applicati
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 13
+line: 17
 text: |
     @RestController
 ```
@@ -41,7 +41,7 @@ Next add the following below your `myRoutes` function in
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 44
+line: 386
 text: |
         @RequestMapping("/fallback")
         public Mono<String> fallback() {
