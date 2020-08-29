@@ -34,17 +34,17 @@ Now, add your `myRoutes` method inside of the `Application` class already in the
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 15
+line: 17
 text: |
-    @Bean
-    public RouteLocator myRoutes(RouteLocatorBuilder builder) {
-        return builder.routes()
-            .route(p -> p
-                .path("/get")
-                .filters(f -> f.addRequestHeader("Hello", "World"))
-                .uri("http://httpbin.org:80"))
-            .build();
-    }
+        @Bean
+        public RouteLocator myRoutes(RouteLocatorBuilder builder) {
+            return builder.routes()
+                .route(p -> p
+                    .path("/get")
+                    .filters(f -> f.addRequestHeader("Hello", "World"))
+                    .uri("http://httpbin.org:80"))
+                .build();
+        }
 
 ```
 
