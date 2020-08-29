@@ -43,9 +43,29 @@ text: |
                     .path("/get")
                     .filters(f -> f.addRequestHeader("Hello", "World"))
                     .uri("http://httpbin.org:80"))
+
+
+
+
+
+
+
+// Creating space for future steps
                 .build();
         }
 
+
+
+
+
+
+
+
+
+
+
+
+// Creating space for next step
 ```
 
 Your file should look like bellow (click to expand)

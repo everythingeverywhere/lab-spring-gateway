@@ -4,27 +4,14 @@ In this example we will leverage HTTPBin’s delay API that waits a certain numb
 
 `src/main/java/gateway/Application.java`
 
-```execute-2
-sed '15,23' ~/gs-gateway/initial/src/main/java/gateway/Application.java
-```
-
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 16
+line: 23
 text: |
-
-    @Bean
-    public RouteLocator myRoutes(RouteLocatorBuilder builder) {
-        return builder.routes()
-            .route(p -> p
-                .path("/get")
-                .filters(f -> f.addRequestHeader("Hello", "World"))
-                .uri("http://httpbin.org:80"))
             .route(p -> p
                 .host("*.hystrix.com")
                 .filters(f -> f.hystrix(config -> config.setName("mycmd")))
-                .uri("http://httpbin.org:80")).
-            build();
+
     }
 ```
 
