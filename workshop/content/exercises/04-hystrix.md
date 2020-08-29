@@ -10,7 +10,9 @@ line: 23
 text: |
         .route(p -> p
             .host("*.hystrix.com")
-            .filters(f -> f.hystrix(config -> config.setName("mycmd")
+            .filters(f -> f.hystrix(config -> config
+                .setName("mycmd")
+                .setFallbackUri("forward:/fallback")))
             .uri("http://httpbin.org:80"))
 ```
 
