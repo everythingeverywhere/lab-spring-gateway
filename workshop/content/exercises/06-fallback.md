@@ -3,7 +3,7 @@ To return a response with the body `fallback` instead of `504` modify our Hystri
 `src/main/java/gateway/Application.java`
 
 ```editor:insert-lines-before-line
-file: src/main/java/gateway/Application.java
+file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
 line: 8
 text: |
 @Bean

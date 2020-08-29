@@ -19,8 +19,8 @@ Now, let's create a route that when a request is made to the Gateway at `/get` t
 In in `src/main/java/gateway/Application.java` import `Bean`, `RouteLocator`, and `RouteLocatorBuilder`. Place them below the other import statements.
 
 ```editor:insert-lines-before-line
-file: ~/gs-gateway/initial/src/main/java/gateway/Application.java/Application.java
-line: 5
+file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
+line: 6
 text: |
     import org.springframework.cloud.gateway.route.RouteLocator;
     import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
@@ -31,8 +31,8 @@ Now, add your `myRoutes` method inside of the `Application` class already in the
 
 
 ```editor:insert-lines-before-line
-file: ~/gs-gateway/initial/src/main/java/gateway/Application.java/
-line: 16
+file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
+line: 17
 text: |
     @Bean
     public RouteLocator myRoutes(RouteLocatorBuilder builder) {
