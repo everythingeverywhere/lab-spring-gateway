@@ -8,11 +8,11 @@ In this example we will leverage HTTPBin’s delay API that waits a certain numb
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
 line: 23
 text: |
-    .route(p -> p
-        .host("*.hystrix.com")
-        .filters(f -> f.hystrix(config -> config.setName("mycmd")))
+        .route(p -> p
+            .host("*.hystrix.com")
+            .filters(f -> f.hystrix(config -> config.setName("mycmd")))
 
-        }
+            }
 ```
 
 There are some differences between this new route configuration and the previous one we created. For one, we are using the `host` predicate instead of the `path` predicate. This means that as long as the host is `hystrix.com` we will route the request to HTTPBin and wrap that request in a `HystrixCommand`. We do this by applying a filter to the route. The Hystrix filter can be configured using a configuration object. In this example you gave the `HystrixCommand` the name mycmd.
