@@ -7,6 +7,7 @@ file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
 line: 28
 text: |
     .setFallbackUri("forward:/fallback")))
+    .uri("http://httpbin.org:80"))
 ```
 
 Now when the Hystrix wrapped route times out it will call `/fallback` in the Gateway app. Lets add the `/fallback` endpoint to our application.
