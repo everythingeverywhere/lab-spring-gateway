@@ -33,23 +33,20 @@ line: 12
 text: |
     @RestController
 ```
-copy the `RestController` annotation
-```copy
-@RestController
-```
 
 Next add the following below your `myRoutes` function in 
 `src/main/java/gateway/Application.java`
+
 > Note: adding \n for readability in response
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 12
+line: 44
 text: |
-@RequestMapping("/fallback")
-public Mono<String> fallback() {
-  return Mono.just("fallback\n");
-}
+        @RequestMapping("/fallback")
+        public Mono<String> fallback() {
+        return Mono.just("fallback\n");
+        }
 ```
 
 To test this new fallback functionality, **restart the application
