@@ -20,11 +20,12 @@ In in `src/main/java/gateway/Application.java` import `Bean`, `RouteLocator`, an
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 6
+line: 5
 text: |
     import org.springframework.cloud.gateway.route.RouteLocator;
     import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
     import org.springframework.context.annotation.Bean;
+
 
 ```
 
@@ -44,6 +45,7 @@ text: |
                 .uri("http://httpbin.org:80"))
             .build();
     }
+
 ```
 
 Your file should look like bellow (click to expand)
