@@ -2,7 +2,11 @@ To return a response with the body `fallback` instead of `504` modify our Hystri
 
 `src/main/java/gateway/Application.java`
 
-```copy
+```editor:insert-lines-before-line
+file: src/main/java/gateway/Application.java
+line: 8
+text: |
+
 @Bean
 public RouteLocator myRoutes(RouteLocatorBuilder builder) {
     return builder.routes()

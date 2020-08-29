@@ -2,7 +2,8 @@ The Spring Cloud Gateway uses routes in order to process requests to downstream 
 
 To get started, we will create a new `Bean` of type `RouteLocator` in `Application.java`.
 
-This `Bean` will  live in `src/main/java/gateway/Application.java`. In the example bellow, `myRoutes` method takes in a `RouteLocatorBuilder` which can be used to create routes. 
+This `Bean` will  live in `src/main/java/gateway/Application.java`. In tshhe example bellow, `myRoutes` method takes in a `RouteLocatorBuilder` which can be used to create routes. 
+> **Example ::**
 ```
 @Bean
 public RouteLocator myRoutes(RouteLocatorBuilder builder) {
@@ -17,24 +18,35 @@ Now, let's create a route that when a request is made to the Gateway at `/get` t
 
 In in `src/main/java/gateway/Application.java` import `Bean`, `RouteLocator`, and `RouteLocatorBuilder`. Place them below the other import statements.
 
-```copy
-import org.springframework.cloud.gateway.route.RouteLocator;
-import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
-import org.springframework.context.annotation.Bean;
+```editor:insert-lines-before-line
+file: src/main/java/gateway/Application.java
+line: 5
+text: |
+
+    import org.springframework.cloud.gateway.route.RouteLocator;
+    import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
+    import org.springframework.context.annotation.Bean;
+    
 ```
 
-Now, add your `myRoutes` method inside of the `Application` class already in the file bellow `public static void main`.
+Now, add your `myRoutes` method inside of the `Application` class already in the file below `public static void main`.
 
-```copy
-@Bean
-public RouteLocator myRoutes(RouteLocatorBuilder builder) {
-    return builder.routes()
-        .route(p -> p
-            .path("/get")
-            .filters(f -> f.addRequestHeader("Hello", "World"))
-            .uri("http://httpbin.org:80"))
-        .build();
-}
+
+```editor:insert-lines-before-line
+file: src/main/java/gateway/Application.java
+line: 16
+text: |
+
+    @Bean
+    public RouteLocator myRoutes(RouteLocatorBuilder builder) {
+        return builder.routes()
+            .route(p -> p
+                .path("/get")
+                .filters(f -> f.addRequestHeader("Hello", "World"))
+                .uri("http://httpbin.org:80"))
+            .build();
+    }
+
 ```
 
 Your file should look like bellow (click to expand)
