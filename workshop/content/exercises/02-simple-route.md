@@ -19,7 +19,7 @@ Now, let's create a route that when a request is made to the Gateway at `/get` t
 In in `src/main/java/gateway/Application.java` import `Bean`, `RouteLocator`, and `RouteLocatorBuilder`. Place them below the other import statements.
 
 ```editor:insert-lines-before-line
-file: src/main/java/gateway/Application.java
+file: ~/gs-gateway/initial/src/main/java/gateway/Application.java/Application.java
 line: 5
 text: |
 
@@ -33,7 +33,7 @@ Now, add your `myRoutes` method inside of the `Application` class already in the
 
 
 ```editor:insert-lines-before-line
-file: src/main/java/gateway/Application.java
+file: ~/gs-gateway/initial/src/main/java/gateway/Application.java/
 line: 16
 text: |
 

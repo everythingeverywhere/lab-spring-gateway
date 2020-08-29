@@ -5,11 +5,11 @@ In this example we will leverage HTTPBin’s delay API that waits a certain numb
 `src/main/java/gateway/Application.java`
 
 ```execute-2
-sed '16,28'
+sed '16,28' ~/gs-gateway/initial/src/main/java/gateway/Application.java/
 ```
 
 ```editor:insert-lines-before-line
-file: src/main/java/gateway/Application.java
+file: ~/gs-gateway/initial/src/main/java/gateway/Application.java/
 line: 16
 text: |
 
