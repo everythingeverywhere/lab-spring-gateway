@@ -5,7 +5,7 @@ metadata:
 spec:
   portal:
     capacity: 3
-    expires: 20m
+    expires: 30m
     orphaned: 5m
   workshops:
   - name:  lab-spring-gateway
