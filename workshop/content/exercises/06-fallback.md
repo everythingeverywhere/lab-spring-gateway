@@ -29,7 +29,7 @@ Place the annotation `@RestController` in the line above `public class Applicati
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 17
+line: 12
 text: |
     @RestController
 ```
@@ -41,7 +41,7 @@ Next add the following below your `myRoutes` function in
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 386
+line: 37
 text: |
         @RequestMapping("/fallback")
         public Mono<String> fallback() {
