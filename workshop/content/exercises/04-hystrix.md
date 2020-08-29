@@ -10,7 +10,7 @@ line: 23
 text: |
         .route(p -> p
             .host("*.hystrix.com")
-            .filters(f -> f.hystrix(config -> config.setName("mycmd") s
+            .filters(f -> f.hystrix(config -> config.setName("mycmd")
             .uri("http://httpbin.org:80"))
 ```
 
