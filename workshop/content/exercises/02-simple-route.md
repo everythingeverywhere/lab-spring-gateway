@@ -50,22 +50,9 @@ text: |
 
 
 
-// Creating space for future steps
+        // Creating space for next step
                 .build();
         }
-
-
-
-
-
-
-
-
-
-
-
-
-// Creating space for next step
 ```
 
 Your file should look like bellow (click to expand)
