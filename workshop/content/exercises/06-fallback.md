@@ -4,7 +4,7 @@ To return a response with the body `fallback` instead of `504` modify our Hystri
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 28
+line: 29
 text: |
     .setFallbackUri("forward:/fallback")))
     .uri("http://httpbin.org:80"))
@@ -29,7 +29,7 @@ Place the annotation `@RestController` in the line above `public class Applicati
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 12
+line: 13
 text: |
     @RestController
 ```
