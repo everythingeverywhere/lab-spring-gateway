@@ -6,12 +6,14 @@ In this example we will leverage HTTPBin’s delay API that waits a certain numb
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 26
+line: 24
 text: |
         // Step 5. Hystrix Circuit Breaker
         .route(p -> p
             .host("*.hystrix.com")
-            .filters(f -> f.hystrix(config -> config.setName("mycmd")
+            .filters(f -> f.hystrix(config -> config
+                .setName("mycmd")
+                .setFallbackUri("forward:/fallback")))
             .uri("http://httpbin.org:80"))
 ```
 

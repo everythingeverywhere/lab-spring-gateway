@@ -6,7 +6,7 @@ To return a response with the body `fallback` instead of `504` modify our Hystri
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
 line: 31
 text: |
-    .setFallbackUri("forward:/fallback")))
+    .setFallbackUri("forward:/fallback\n")))
     .uri("http://httpbin.org:80"))
 ```
 
