@@ -6,8 +6,8 @@ To return a response with the body `fallback` instead of `504` modify our Hystri
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
 line: 31
 text: |
-    .setFallbackUri("forward:/fallback\n")))
-    .uri("http://httpbin.org:80"))
+        .setFallbackUri("forward:/fallback\n")))
+        .uri("http://httpbin.org:80"))
 ```
 
 Now when the Hystrix wrapped route times out it will call `/fallback` in the Gateway app. Lets add the `/fallback` endpoint to our application.
