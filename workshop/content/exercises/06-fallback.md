@@ -18,9 +18,9 @@ In `Application.java` import the `Mono` reactive stream,  a `@RestController` an
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
 line: 9
 text: |
-    import reactor.core.publisher.Mono;
-    import org.springframework.web.bind.annotation.RequestMapping;
-    import org.springframework.web.bind.annotation.RestController;
+        import reactor.core.publisher.Mono;
+        import org.springframework.web.bind.annotation.RequestMapping;
+        import org.springframework.web.bind.annotation.RestController;
 
 
 ```
