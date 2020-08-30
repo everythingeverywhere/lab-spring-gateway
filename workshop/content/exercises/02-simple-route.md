@@ -36,7 +36,7 @@ Now, add your `myRoutes` method inside of the `Application` class already in the
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
 line: 16
 text: |
-        // 3. myRoutes a simple route method
+        // Step 3. myRoutes a simple route method
         @Bean
         public RouteLocator myRoutes(RouteLocatorBuilder builder) {
             return builder.routes()

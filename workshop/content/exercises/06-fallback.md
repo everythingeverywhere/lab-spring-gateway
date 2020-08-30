@@ -8,7 +8,6 @@ line: 31
 text: |
         // uri=/fallback
         .setFallbackUri("forward:/fallback")))
-        .uri("http://httpbin.org:80"))
 ```
 
 Now when the Hystrix wrapped route times out it will call `/fallback` in the Gateway app. Lets add the `/fallback` endpoint to our application.
