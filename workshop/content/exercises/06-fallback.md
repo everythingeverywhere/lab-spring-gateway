@@ -2,9 +2,9 @@ To return a response with the body `fallback` instead of `504` modify our Hystri
 
 `src/main/java/gateway/Application.java`
 
-```editor:insert-lines-before-line
+```editor:append-lines-after-match
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 31
+match: config.setName("mycmd")
 text: |
         // uri=/fallback
         .setFallbackUri("forward:/fallback")))
