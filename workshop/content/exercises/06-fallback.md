@@ -41,7 +41,7 @@ Next add the following below your `myRoutes` function in
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 37
+line: 39
 text: |
         @RequestMapping("/fallback")
         public Mono<String> fallback() {
