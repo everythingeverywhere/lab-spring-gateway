@@ -11,7 +11,9 @@ text: |
         // Step 5. Hystrix Circuit Breaker
         .route(p -> p
                     .host("*.hystrix.com")
-                    .filters(f -> f.hystrix(config -> config.setName("mycmd")))
+                    .filters(f -> f.hystrix(config -> config
+                        .setName("mycmd")
+                        )) 
                     .uri("http://httpbin.org:80"))
 ```
 
