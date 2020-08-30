@@ -7,7 +7,7 @@ file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
 match: .setName("mycmd")
 text: |
         // uri=/fallback
-        .setFallbackUri("forward:/fallback")))
+        .setFallbackUri("forward:/fallback")
 ```
 
 Now when the Hystrix wrapped route times out it will call `/fallback` in the Gateway app. Lets add the `/fallback` endpoint to our application.
@@ -41,7 +41,7 @@ Next add the following below your `myRoutes` function in
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
-line: 40
+line: 41
 text: |
         @RequestMapping("/fallback")
         public Mono<String> fallback() {
