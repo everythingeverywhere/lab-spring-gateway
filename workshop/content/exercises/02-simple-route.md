@@ -2,7 +2,7 @@ The Spring Cloud Gateway uses routes in order to process requests to downstream 
 
 To get started, we will create a new `Bean` of type `RouteLocator` in `Application.java`.
 
-This `Bean` will  live in `src/main/java/gateway/Application.java`. In tshhe example bellow, `myRoutes` method takes in a `RouteLocatorBuilder` which can be used to create routes. 
+This `Bean` will  live in `src/main/java/gateway/Application.java`. In the example below, `myRoutes` method takes in a `RouteLocatorBuilder` which can be used to create routes. 
 > **Example ::**
 ```
 @Bean
@@ -16,7 +16,7 @@ In addition to just creating routes, the `RouteLocatorBuilder` allows you to add
 
 Now, let's create a route that when a request is made to the Gateway at `/get` the request gets sent to `https://httpbin.org/get`. We will include a filter to add the request header `Hello` with the value `World` to the request before it is routed.
 
-In in `src/main/java/gateway/Application.java` import `Bean`, `RouteLocator`, and `RouteLocatorBuilder`. Place them below the other import statements.
+In in `src/main/java/gateway/Application.java` import `Bean`, `RouteLocator`, and `RouteLocatorBuilder` underneath the other import statements.
 
 ```editor:insert-lines-before-line
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
