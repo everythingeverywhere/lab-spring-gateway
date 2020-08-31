@@ -16,7 +16,7 @@ modules:
     exercises/06-fallback:
         name: Creating a User Friendly Response
     exercises/07-test-fallback.md:
-        name: Test the `/fallback` Endpoint
+        name: Test the /fallback Endpoint
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
