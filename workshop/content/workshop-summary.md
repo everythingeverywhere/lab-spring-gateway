@@ -2,9 +2,11 @@
 
 This is just the beginning of your journey to learn Spring Cloud Gateway there is so much more that you can do.
 
-**For more Spring Cloud Gateway:**
+![https://spring.io/guides/gs/gateway/](./exercises/spring-logo-og.svg)
 
-- Check out  [*Building a Gateway*](https://spring.io/guides/gs/gateway/) a guide from spring.io that inspired this lab.  **It includes a bonus section on writing tests!**
+# **For more Spring Cloud Gateway:**
+
+- For the instructions to this lab **with a bonus section on writing tests!** see [*Building a Gateway*](https://spring.io/guides/gs/gateway/) a guide from spring.io that inspired this lab.  
 
 -  For a breakdown of an Spring Cloud Gateway you can scan the [reference docs](https://docs.spring.io/spring-cloud-gateway/docs/3.0.0-SNAPSHOT/reference/html/)
 
