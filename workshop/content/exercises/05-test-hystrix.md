@@ -1,6 +1,6 @@
 Lets test this new route, stop the running terminal.
 
-```terminal:interrrupt-all
+```terminal:interrupt-all
 ```
 
 Restart your application
