@@ -23,19 +23,10 @@ The workshop uses these action blocks for various purposes. Anytime you see such
 
 Clone the source repository for this guide using Git on the 1st terminal: 
 
-```execute-1
+```execute-all
 git clone https://github.com/spring-guides/gs-gateway.git
 ```
 
-```execute-1
-cd ./gs-gateway/initial/
-```
-
-Clone the source repository for this guide using Git on the 2nd terminal: 
-```execute-2
-git clone https://github.com/spring-guides/gs-gateway.git
-```
-
-```execute-2
+```execute-all
 cd ./gs-gateway/initial/
 ```

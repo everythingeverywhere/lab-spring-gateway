@@ -1,10 +1,18 @@
-Lets test this new route, **stop (ctrl + c) and restart the application**:
+Lets test this new route, stop the running terminal.
+
+```terminal:interrrupt
+session: 1
+```
+
+Restart your application
 
 ```execute-1
 mvn spring-boot:run
 ```
 
 This time you are going to make a request to /`delay/3`. You must include a `Host` header that has the a host of `hystrix.com` or else the request won’t be routed. In cURL this would look like:
+
+Execute the following when your application starts:
 
 ```execute-2
 curl --dump-header - --header 'Host: www.hystrix.com' http://localhost:8080/delay/3

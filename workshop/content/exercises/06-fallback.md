@@ -6,7 +6,7 @@ To return a response with the body `fallback` instead of `504` modify our Hystri
 file: ~/gs-gateway/initial/src/main/java/gateway/Application.java
 match: .setName("mycmd")
 text: |
-        // uri=/fallback
+        // Step 7. uri=/fallback
         .setFallbackUri("forward:/fallback")
 ```
 
@@ -49,13 +49,19 @@ text: |
         }
 ```
 
-To test this new fallback functionality, **restart the application
-dont forget to (control + C) on the terminal first**
+To test this new fallback functionality, stop the running terminal.
+
+```terminal:interrrupt
+session: 1
+```
+
+Restart your application
+
 ```execute-1
 mvn spring-boot:run
 ```
 
-And again issue the following cURL command
+Once the terminal states the application is running again, issue the following cURL command.
 
 ```execute-2
 curl --dump-header - --header 'Host: www.hystrix.com' http://localhost:8080/delay/3

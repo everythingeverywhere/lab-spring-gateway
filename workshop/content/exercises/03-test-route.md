@@ -4,7 +4,7 @@ To test our very simple Gateway, just run `Application.java`, it should be run o
 mvn spring-boot:run
 ```
 
-Once the application is running, make a request to `http://localhost:8080/get`. You can do this using cURL by issuing the following command in your terminal.
+**Once the application is running**, make a request to `http://localhost:8080/get`. You can do this using cURL by issuing the following command in your terminal.
 
 ```execute-2
  curl http://localhost:8080/get
