@@ -51,8 +51,7 @@ text: |
 
 To test this new fallback functionality, stop the running terminal.
 
-```terminal:interrrupt
-session: 1
+```terminal:interrrupt-all
 ```
 
 Restart your application
