@@ -49,32 +49,53 @@ text: |
         }
 ```
 
-To test this new fallback functionality, stop the running terminal.
+The entire contents of `Application.java` should be:
 
-```terminal:interrupt-all
+```copy
+package gateway;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.gateway.route.RouteLocator;
+import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
+import org.springframework.context.annotation.Bean;
+
+import reactor.core.publisher.Mono;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+@RestController
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+
+// Step 3. myRoutes a simple route method
+@Bean
+public RouteLocator myRoutes(RouteLocatorBuilder builder) {
+    return builder.routes()
+        .route(p -> p
+            .path("/get")
+            .filters(f -> f.addRequestHeader("Hello", "World"))
+            .uri("http://httpbin.org:80"))
+// Step 5. Hystrix Circuit Breaker
+.route(p -> p
+            .host("*.hystrix.com")
+            .filters(f -> f.hystrix(config -> config
+                .setName("mycmd")
+// Step 7. uri=/fallback
+.setFallbackUri("forward:/fallback")
+                )) 
+            .uri("http://httpbin.org:80"))
+
+// ****- Other routes -****
+        .build();
+}
+@RequestMapping("/fallback")
+public Mono<String> fallback() {
+return Mono.just("fallback\n");
+}
+}
+
 ```
-
-Restart your application
-
-```execute-1
-mvn spring-boot:run
-```
-
-Once the terminal states the application is running again, issue the following cURL command.
-
-```execute-2
-curl --dump-header - --header 'Host: www.hystrix.com' http://localhost:8080/delay/3
-```
-
-With the fallback in place, we now see that we get a `200` back from the Gateway with the response body of `fallback`. 
-
-```
-HTTP/1.1 200 OK
-transfer-encoding: chunked
-Content-Type: text/plain;charset=UTF-8
-
-fallback
-```
-
-Your file should look like bellow (click to expand)
-![Step-6-example](fallback.png)
