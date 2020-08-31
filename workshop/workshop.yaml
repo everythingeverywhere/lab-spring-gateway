@@ -9,7 +9,7 @@ modules:
     - exercises/04-hystrix
     - exercises/05-test-hystrix
     - exercises/06-fallback
-    - exercises/07-test-fallback.md
+    - exercises/07-test-fallback
     - workshop-summary
 
 
