@@ -1,4 +1,4 @@
-To test our very simple Gateway, just run `Application.java`, it should be run on port `8080`. 
+To test our very simple Gateway, just run `Application.java`, it should be run on port `8080`.
 
 ```execute-1
 mvn spring-boot:run
@@ -9,6 +9,7 @@ mvn spring-boot:run
 ```execute-2
  curl http://localhost:8080/get
 ``` 
+
 You should receive a response that looks like the following:
 
 ```
