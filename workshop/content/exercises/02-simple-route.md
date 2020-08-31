@@ -50,6 +50,8 @@ text: |
         }
 ```
 
+---
+
 Your `Application.java` should look like this:
 
 ```copy

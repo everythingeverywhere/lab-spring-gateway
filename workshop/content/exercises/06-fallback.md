@@ -49,6 +49,8 @@ text: |
         }
 ```
 
+---
+
 The entire contents of `Application.java` should be:
 
 ```copy
